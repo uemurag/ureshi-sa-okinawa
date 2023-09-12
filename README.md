@@ -1,4 +1,4 @@
-# uemura_okinawa
+# ureshi-sa-okinawa
 
 沖縄のカルチャーについての情報発信サイト
 
