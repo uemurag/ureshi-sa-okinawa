@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+.branding {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+b {
+  border-bottom: solid #D33D75;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #383e45;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.site-title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
+
+.site-title a {
+  display: block;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: solid 1px #383e45;
+}
+
+#contact h2 {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: solid 1px #383e45;
+}
+
+.content-title {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 40px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+
+/* パソコン用 */
+@media screen and (min-width: 769px) {
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #header ul {
+    display: flex;
+    padding: 10px 0;
+  }
+
+  #header li {
+    margin-left: 30px;
+  }
+
+  #header li a {
+    color: #24292e;
+  }
+
+  #header li a:hover {
+    opacity: 0.7;
+  }
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  position: relative;
+}
+
+#mainvisual img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+#mainvisual p {
+  position: absolute;
+  color: rgb(78, 76, 76);
+  font-size: 16px;
+  font-family: 'Tinos', serif;
+  letter-spacing: 4px;
+  top: 400px;
+  left: 80px;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* 最大768pxまで */
+  #mainvisual img {
+    width: 100%;
+  }
+}
+
+/*-------------------------------------------
+美々ビーチ
+-------------------------------------------*/
+#bibi {
+  border: none;
+  border-bottom: solid 1px #383e45;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#beach {
+  margin: 10px auto 0 20px;
+  padding: 24px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #5282B1;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+#beach.on {
+  display: block;
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about img {
+  margin-bottom: 20px;
+}
+
+#about .content {
+  flex-direction: column;
+}
+
+#about img {
+  margin-right: 0;
+}
+
+/*-------------------------------------------
+Food of Okinawa
+-------------------------------------------*/
+#FoodofOkinawa ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#FoodofOkinawa li {
+  width: 32%;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  #FoodofOkinawa ul {
+    flex-direction: column;
+  }
+
+  #FoodofOkinawa li {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .food {
+    max-width: 331px;
+    text-align: left;
+    margin: auto;
+  }
+
+}
+
+/*-------------------------------------------
+traditional art
+-------------------------------------------*/
+#traditionalart {
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.eisa {
+  width: 560px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .eisa {
+    margin: 10px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.youtube iframe {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+/*-------------------------------------------
+Okinawan Dialect
+-------------------------------------------*/
+.link {
+  color: blue;
+}
+
+/*-------------------------------------------
+  fruits
+  -------------------------------------------*/
+.slider {
+  text-align: center;
+}
+
+/*-------------------------------------------
+  Featured Hotels 
+  ------------------------------------------*/
+#FeaturedHotels {
+  width: 100%;
+}
+
+#Hotels ul {
+  display: flex;
+  justify-content: center;
+}
+
+#Hotels img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 4/3;
+}
+/*-------------------------------------------
+comments
+-------------------------------------------*/
+.comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#show-latest-comments {
+  display: block;
+  margin-top: 20px;
+}
+
+#comment-list {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.me {
+  width: 386px;
+  margin: 0 auto;
+}
+
+.me div {
+  margin: 0 32px 32px 32px;
+}
+
+.mform {
+  justify-content: center;
+}
+
+.comments {
+  text-align: center
+}
+
+.comments dd {
+  width: 600px;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
